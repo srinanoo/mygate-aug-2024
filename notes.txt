@@ -1,0 +1,30 @@
+Basic Coding Standards
+    Meaningful Names
+        no... assignment1, project1, test1....
+
+    Naming conventions
+        UPPERCASE
+        lowercase
+        lowerCamelCase
+        UpperCamelCase
+        dash-cases
+            about-mygate
+        snake_cases
+            about_mygate
+
+    Code Indentation
+
+Web Server
+    default.htm
+    default.html
+    index.htm
+    index.html
+    home.html
+
+
+Postman (desktop app)
+    - install and register
+MongoDB Community Edition
+    - install and register (atlas)
+Vercel
+    - register and get it activated
