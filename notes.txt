@@ -28,3 +28,134 @@ MongoDB Community Edition
     - install and register (atlas)
 Vercel
     - register and get it activated
+
+
+17-08-2024
+
+Express:
+    npm i express dotenv cors
+
+    npm i -D nodemon
+
+    sudo npm i -g nodemon
+
+Querystring
+    /?key1=value1&key2=value2
+
+Query Parameters
+    /value1/value2
+        in backend:
+            key1=value1
+            key2=value2
+
+Express.js (event queue / loop)
+    - Routes (thread pools)
+        - Controllers (service workers)
+            FUNCTIONALITY
+
+Postman
+    Querystring (depends) - URL
+    Query Parameters (next preferred)
+    Post
+        URL-Encoded (depends) - URL
+        JSON (preferred)
+
+MongoDB
+    Database
+        List
+            show dbs
+            or
+            show databases
+        Create or to Switch to the current db
+            use <db_name>
+        Delete
+            use <db_name>
+            db.dropDatabase()
+    Collection
+        List
+            show collections
+        Create
+            use <db_name>
+            db.createCollection("<collection_name>")
+        Rename
+            use <db_name>
+            db.<collection_name>.renameCollection("<new_collection_name>")
+        Delete
+            use <db_name>
+            db.<collection_name>.drop()
+    Document
+        Create
+            insertOne
+                db.<collection_name>.insertOne(
+                    {
+                        "field1": "fieldvalue",
+                        "field2": "fieldvalue"
+                    }
+                )
+            insertMany
+                db.<collection_name>.insertOne(
+                    [
+                        {
+                            "field1": "fieldvalue",
+                            "field2": "fieldvalue"
+                        },
+                        {
+                            "field1": "fieldvalue",
+                            "field2": "fieldvalue"
+                        }
+                    ]
+                )
+        Read (List)
+            find()
+                db.<collection_name>.find()
+        Update
+            updateOne
+                db.<collection_name>.updateOne(
+                    {
+                        "field1": "fieldvalue"
+                    },
+                    {
+                        $set: {
+                            "field2": "fieldvalue",
+                            "field3": "fieldvalue",
+                        }
+                    }
+                )
+
+                db.<collection_name>.updateOne(
+                    {
+                        "field1": "fieldvalue"
+                    },
+                    {
+                        $set: {
+                            "field2": "fieldvalue",
+                            "field3": "fieldvalue",
+                        }
+                    },
+                    { upsert: true }
+                )
+            updateMany
+                db.<collection_name>.updateMany(
+                    {
+                        "field1": "fieldvalue"
+                    },
+                    {
+                        $set: {
+                            "field2": "fieldvalue",
+                            "field3": "fieldvalue",
+                        }
+                    }
+                )
+        Delete
+            deleteOne
+                db.<collection_name>.deleteOne(
+                    {
+                        "field1": "fieldvalue",
+                    }
+                )
+            deleteMany
+                db.<collection_name>.deleteMany(
+                    {
+                        "field1": "fieldvalue",
+                    }
+                )

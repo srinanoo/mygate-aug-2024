@@ -14,6 +14,8 @@ http.createServer((req, res) => {
             break;
         case "/readSpecificTrainee":
             break;
+        case "/createTrainee":
+            break;
         default:
             res.write("No Routes Found!");
             res.end();
